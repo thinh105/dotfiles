@@ -1,0 +1,34 @@
+[/]
+area-screenshot=@as []
+area-screenshot-clip=@as []
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
+screencast=@as []
+screenshot=@as []
+screenshot-clip=@as []
+window-screenshot=@as []
+window-screenshot-clip=@as []
+
+[custom-keybindings/custom0]
+binding='<Primary><Shift>asciitilde'
+command='systemctl reboot'
+name='Restart'
+
+[custom-keybindings/custom1]
+binding='<Primary><Shift>Escape'
+command='systemctl poweroff'
+name='Shutdown'
+
+[custom-keybindings/custom2]
+binding='<Primary>Escape'
+command='systemctl suspend'
+name='Suspend'
+
+[custom-keybindings/custom3]
+binding='Print'
+command='flameshot gui'
+name='Flameshot'
+
+[custom-keybindings/custom4]
+binding='<Primary><Alt>BackSpace'
+command='xkill'
+name='xkill'
