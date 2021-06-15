@@ -1,94 +1,95 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.minimap.maxColumn": 300,
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "bookmarks.sideBar.expanded": true,
+    "debug.console.fontSize": 16,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorStyle": "line-thin",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.foldingStrategy": "indentation",
+    "editor.fontFamily": "'Victor Mono Medium', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": "'ss01'",
+    "editor.fontSize": 18,
+    "editor.fontWeight": "500",
+    "editor.lineHeight": 30,
     "editor.minimap.enabled": false,
-    "workbench.sideBar.location": "right",
-    "files.autoSave": "onFocusChange",
+    "editor.minimap.maxColumn": 300,
+    "editor.scrollbar.verticalScrollbarSize": 10, // still works - restart VS Code to get effect
+    "editor.suggestSelection": "first",
+    "editor.tabSize": 2,
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            //following will be in italic
+            "comment"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    },
+    "eslint.alwaysShowStatus": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
+    "files.autoSave": "onFocusChange",
     "files.exclude": {
-        "**/dist/**": true,
-        "**/node_modules/**": true
+      "**/dist/**": true,
+      "**/node_modules/**": true
     },
+    "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/*/**": true
+    },
+    "git.autofetch": true,
+    "gitlens.blame.ignoreWhitespace": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "markdown.preview.fontSize": 20,
+    "prettier.jsxSingleQuote": true,
+    "projectManager.git.baseFolders": [
+      "~/code",
+      "~/cloudwaitress"
+    ],
+    "rest-client.fontSize": 20,
+    "rest-client.previewResponseInUntitledDocument": true,
+    "sync.autoUpload": false,
+    "sync.gist": "d5770ce849fafe1f4e940a293f794b4d",
+    "tabnine.experimentalAutoImports": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontSize": 18,
-    "editor.tabSize": 2,
+    "terminal.integrated.fontWeight": "500",
     "terminal.integrated.rendererType": "dom",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "window.menuBarVisibility": "toggle",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "editor.fontSize": 18,
-    "debug.console.fontSize": 16,
-    "markdown.preview.fontSize": 20,
-    "rest-client.fontSize": 20,
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorStyle": "line-thin",
-    "sync.gist": "d5770ce849fafe1f4e940a293f794b4d",
-    "sync.autoUpload": false,
-    "files.watcherExclude": {
-        "**/.git/objects/**": true,
-        "**/.git/subtree-cache/**": true,
-        "**/node_modules/*/**": true
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "tabnine.experimentalAutoImports": true,
-    "editor.fontFamily": "'Victor Mono Medium', Consolas, 'Courier New', monospace",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.fontLigatures": "'ss01'",
-    "editor.lineHeight": 28,
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.colorCustomizations": {
-        "editor.background": "#121212",
-        "sideBar.background": "#000",
-        "statusBar.background": "#000",
-        "activityBar.background": "#000",
-        "titleBar.activeBackground": "#000",
-        "tab.inactiveBackground": "#000",
-        "editorGroupHeader.tabsBackground": "#000",
-        "tab.activeBackground": "#303030",
-    },
-    "editor.scrollbar.verticalScrollbarSize": 10, // still works - restart VS Code to get effect
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-          {
-            "scope": [
-              //following will be in italic
-              "comment",
-            ],
-            "settings": {
-              "fontStyle": "italic",
-            }
-          },
-        ]
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "bookmarks.sideBar.expanded": true,
-    "prettier.jsxSingleQuote": true,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.menuBarVisibility": "toggle",
     "window.zoomLevel": -1,
-    "projectManager.git.baseFolders": [
-        "~/code",
-        "~/cloudwaitress"
-    ],
-    "editor.fontWeight": "500",
-    "editor.foldingStrategy": "indentation",
-    "terminal.integrated.fontWeight": "500",    
-    "eslint.alwaysShowStatus": true,
-    "rest-client.previewResponseInUntitledDocument": true,
-    "editor.renderWhitespace": "none",
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#000",
+      "editor.background": "#121212",
+      "editorGroupHeader.tabsBackground": "#000",
+      "sideBar.background": "#000",
+      "statusBar.background": "#000",
+      "tab.activeBackground": "#303030",
+      "tab.inactiveBackground": "#000",
+      "titleBar.activeBackground": "#000"
+    },
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "newUntitledFile"
 }
