@@ -8,7 +8,10 @@ dconf dump /org/gnome/shell/extensions/dash-to-panel/ > dtp_settings
 
 and then import them on another pc with:
 ```bash
-dconf load /org/gnome/shell/extensions/dash-to-panel/ < dtp_settings
+dconf load /org/gnome/shell/extensions/dash-to-panel/ < dash-to-panel
+
+dconf load /org/gnome/shell/extensions/unite/ < unite
+
 ```
 
 
