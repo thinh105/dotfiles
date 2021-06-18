@@ -1,6 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# fnm
+export PATH=/home/bastian/.fnm:$PATH
+eval "`fnm env`"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/home/bastian/.oh-my-zsh"
 
@@ -27,26 +31,24 @@ ZSH_THEME="random"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
-DISABLE_UPDATE_PROMPT="true"
+ DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-DISABLE_MAGIC_FUNCTIONS="true"
+ DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-DISABLE_AUTO_TITLE="true"
+ DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
-# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -76,6 +78,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -91,28 +95,19 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 #expand aliases when typing Tab
 zstyle ':completion:*' completer _expand_alias _complete _ignored
-
 
 # Customize the Oh-my-zsh tab title to the current folder
 case $TERM in
     xterm*)
      precmd ()  {
-        print -Pn "\e]0; %24<..<%/\a"
+        # print -Pn "\e]0; %26<..<%/\a"
+        print -Pn "\e]0; %<..<%/\a"
      }
+    #
      ;;
 esac
-
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -135,12 +130,30 @@ zinit light-mode for \
     zinit-zsh/z-a-patch-dl \
     zinit-zsh/z-a-bin-gem-node
 
-### End of Zinit's installer chunk
-
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
-# fnm
-export PATH=/home/bastian/.fnm:$PATH
-eval "`fnm env`"
+### End of Zinit's installer chunk
+
+# export PATH=/opt/tmux/bin:$PATH
+# export LD_LIBRARY_PATH=/opt/libevent/lib:/opt/ncurses/lib:$LD_LIBRARY_PATH
+# export MANPATH=/opt/tmux/share/man:$MANPATH
+
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias yd="yarn dev"
+alias yt="yarn test"
+alias yu="yarn utest"
+alias cl="yarn cl"
+alias rf="yarn refresh"
+alias gbm="git branch -m"
+alias gps="git push --set-upstream origin $(git_current_branch)"
