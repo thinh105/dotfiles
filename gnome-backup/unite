@@ -1,6 +1,10 @@
 [/]
+app-menu-ellipsize-mode='middle'
 desktop-name-text=''
+greyscale-tray-icons=false
 hide-aggregate-menu-arrow=true
+hide-dropdown-arrows=true
 restrict-to-primary-screen=false
 show-window-buttons='always'
+window-buttons-placement='auto'
 window-buttons-theme='united-dark'
