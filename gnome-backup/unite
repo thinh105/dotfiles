@@ -6,5 +6,6 @@ hide-aggregate-menu-arrow=true
 hide-dropdown-arrows=true
 restrict-to-primary-screen=false
 show-window-buttons='always'
+show-window-title='never'
 window-buttons-placement='auto'
 window-buttons-theme='united-dark'
