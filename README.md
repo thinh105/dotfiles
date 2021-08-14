@@ -12,6 +12,8 @@
 # App need to download in command line
 ```bash
 sudo apt install gnome-tweaks
+
+sudo apt install shotwell
 ```
 ## Bamboo
 ```bash
