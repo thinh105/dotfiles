@@ -1,41 +1,19 @@
-New Ubuntu
-
-28/03/2021 9:54 PM
-
-# Apps on store
-
-- [Flameshot](https://itsfoss.com/flameshot/)
-- VLC
-- Foliate
-
+# New Ubuntu
 
 # Apps need to download
-- Joplin
-- VS Code
 - Chrome
-- Foxit reader
+- VS Code
 - [Bammboo](https://github.com/BambooEngine/ibus-bamboo)
+- Flameshot
+- VLC
+- Joplin
+- Foxit reader
 
 # App need to download in command line
 ```bash
 sudo apt install gnome-tweaks
 ```
-
-```bash
-sudo add-apt-repository ppa:mattrose/terminator
-sudo apt-get update
-sudo apt install terminator
-
-```
-
-## Turn off the `Ctrl + Shift + E` Gnome Emoji shortcut
-
-Launch IBus Preferences (command ibus-setup)
-
-Then hit the "Emoji" tab > Three-dot menu at right of the Keyboard Shortcuts > Emoji choice > Delete the standard `CTRL - SHIFT - E` shortcut,
-
-
-# Bamboo
+## Bamboo
 ```bash
 # run each command separately
 sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
@@ -49,7 +27,22 @@ ibus restart
 # Đặt ibus-bamboo làm bộ gõ mặc định
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'Bamboo')]"
 ```
-## change mouse scroll - [imWheel](http://www.webupd8.org/2015/12/how-to-change-mouse-scroll-wheel-speed.html)
+## Terminator
+```bash
+sudo add-apt-repository ppa:mattrose/terminator
+sudo apt-get update
+sudo apt install terminator
+
+```
+# Tips/Tricks
+## Turn off the `Ctrl + Shift + E` Gnome Emoji shortcut
+
+Launch IBus Preferences (command ibus-setup)
+
+Then hit the "Emoji" tab > Three-dot menu at right of the Keyboard Shortcuts > Emoji choice > Delete the standard `CTRL - SHIFT - E` shortcut,
+
+
+## Change mouse scroll - [imWheel](http://www.webupd8.org/2015/12/how-to-change-mouse-scroll-wheel-speed.html)
 ```bash
 sudo apt install imwheel
 
@@ -145,13 +138,13 @@ fnm list # show local versions
 ![5bdbbc0682c17ba3d4fa4558680f1d7e.png](./_resources/c788b984b89348ccaad0c047e2430c1c.png)
 - dconf-editor
 - [Remove Audio Device Selection Dialog](https://extensions.gnome.org/extension/1482/remove-audio-device-selection-dialog/)
-	
+
 # My favorite Setting
 
 ## [Don't ask pass when unlock](https://askubuntu.com/questions/1029696/disable-password-request-from-suspend-18-04/1044908#1044908)\
 
 	Open `Dcof-editor` then navigate to `org/gnome/desktop/screensaver` and turn off `ubuntu-lock-on-suspend`
-	
+
 ## Change the folder in sidebar nautilus
 https://askubuntu.com/questions/79150/how-do-i-remove-places-entries-from-the-nautilus-sidebar/79155#79155
 
@@ -250,3 +243,6 @@ Step 4) Enter the old password when you see the pop-up. Then leave the new passw
 Step 5) You should see an obvious warning pop-up that passwords will be unencrypted. Click ‘Continue’.
 
 That’s it! Restart your computer for the setting to take effect. Next time you launch Chrome or Chromium browser, you should not see the keyring request.
+
+# Remove Snaps in Ubuntu
+https://www.kevin-custer.com/blog/disabling-snaps-in-ubuntu-20-04/
