@@ -1,0 +1,20 @@
+# This is Git's per-user configuration file.
+[user]
+        name = Thinh Nguyen
+        email = maxiqboy@gmail.com
+# Please adapt and uncomment the following lines:
+#       name = Thinh
+#       email = bastian@bastian-dell.(none)
+
+# you can do:
+# git push -u
+# Which will both create the remote branch with the same name and track it.
+# https://stackoverflow.com/questions/6089294/why-do-i-need-to-do-set-upstream-all-the-time
+
+[push]
+        default = current
+
+[pull]
+        rebase = true
+[rebase]
+        autostash = true
